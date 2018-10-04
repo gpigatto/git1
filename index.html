@@ -9,17 +9,21 @@
 <body>
     git init <!-- inicia repositorio -->
     git status <!-- mostra arq alterados, vermelho -> n staging, verde -> staging -->
-    git add <!-- add to staging -->
+    git add [file] <!-- add to staging -->
     git add . <!-- add all -->
-    git rm --cached ... <!-- remove from staging -->
+    git rm --cached [file] <!-- remove from staging -->
     git commit -m "mensagem"
     git log --oneline
-    git checkout ... <!-- commit ou branch -->
-    git revert ...
-    git reset ... <!-- --hard remove até do editor -->
-    git branch ... <!-- ... -> nome da branch ou -a -> checar branchs-->
-    ou git checkout -b ... <!-- entra direto -->
-    git branch -d ...
-    git merge ...
+    git checkout [id] <!-- commit ou branch -->
+    git revert [id]
+    git reset [id] <!-- --hard remove até do editor -->
+    git branch [name]
+    git branch -a <!-- checar branchs existentes -->
+    ou git checkout -b [branch] <!-- entra direto -->
+    git branch -d [branch]
+    git merge [branch]
+    git push [url] [branch]
+    git remote add [alias] [url] <!-- [alias] geralmente origin -->
+    git push [alias] [branch]
 </body>
 </html>
